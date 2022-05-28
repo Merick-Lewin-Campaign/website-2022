@@ -1,0 +1,29 @@
+{
+  "name": "school-board-2022",
+  "version": "1.0.0",
+  "description": "Merick Lewin for Broward County School Board District 6",
+  "source": ["./src/index.html", "./src/why-im-running/index.html"],
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Merick-Lewin-Campaign/school-board-2022.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Merick-Lewin-Campaign/school-board-2022/issues"
+  },
+  "homepage": "https://github.com/Merick-Lewin-Campaign/school-board-2022#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.5",
+    "bootstrap": "^5.1.3"
+  }
+}
