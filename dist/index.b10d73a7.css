@@ -1,20 +1,25 @@
 :root {
   --bs-body-font-family: "Roboto", sans-serif;
+  --lg-spacing: 8rem;
+}
+
+.py-lg {
+  padding: var(--lg-spacing) 0;
 }
 
 .hdr-container {
-  height: 85vh;
+  height: 75vh;
 }
 
 @media screen and (max-width: 768px) {
   .hdr-container {
-    height: 100vh;
+    height: 90vh;
   }
 }
 
 @media screen and (max-height: 728px) {
   .hdr-container {
-    height: 100vh;
+    height: 90vh;
   }
 }
 
@@ -72,6 +77,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .home-hdr {
+    text-align: center;
+  }
+
   .hero-text {
     padding-bottom: 0;
   }
@@ -87,23 +96,64 @@
 }
 
 @media screen and (max-width: 991px) {
-  .home-hdr {
-    text-align: center;
-  }
-
   .nav-bg {
     background-color: #0e1b58;
   }
 }
 
+.scrolled {
+  background-color: #0e1b58;
+}
+
 .home-signup-form {
-  margin-top: -10vh;
+  margin-top: -100px;
   position: relative;
 }
 
 @media screen and (max-width: 768px) {
   .home-signup-form {
     margin-top: -15vh;
+  }
+}
+
+.about {
+  text-align: justify;
+  grid-template-columns: 1fr 2fr;
+  place-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+  line-height: 2rem;
+  display: grid;
+}
+
+.about span {
+  z-index: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+}
+
+.about span:after {
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 10px;
+  background: #1697b1;
+  transition: all .8s .4s;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+}
+
+.about img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .about .about-img, .about .about-text {
+    grid-column: span 3;
+    margin-inline: .5rem;
+    padding: .5rem;
   }
 }
 

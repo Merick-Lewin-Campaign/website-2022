@@ -1,11 +1,11 @@
 // main header container
 .hdr-container{
-    height: 85vh;
+    height: 75vh;
         @media screen and (max-width: 768px) {
-        height: 100vh;
+        height: 90vh;
     }
      @media screen and (max-height: 728px) {
-        height: 100vh;
+        height: 90vh;
     }
 }
 
@@ -57,7 +57,9 @@
 }
 
 @media screen and (max-width: 768px) {
-
+.home-hdr {
+        text-align: center;
+    }
     .hero-text{
         padding-bottom: 0;
     }
@@ -72,13 +74,15 @@
     }
 
 @media screen and (max-width: 991px) {
-        .home-hdr {
-        text-align: center;
-    }
+        
     .nav-bg {
         background-color: transparent;
     }
     .nav-bg{
         background-color: $secondary;
     }
+}
+
+.scrolled {
+    background-color: $secondary;
 }
