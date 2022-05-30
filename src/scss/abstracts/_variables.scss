@@ -4,3 +4,11 @@ $danger: hsl(355, 90%, 37%);
 $bs-secondary-rgb: rgb(14, 27, 88);
 $font-weight-bolder: 900;
 $border-radius-lg: .5rem;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 600px,
+  md: 845px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);

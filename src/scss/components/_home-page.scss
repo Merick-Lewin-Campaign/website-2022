@@ -7,17 +7,38 @@
   }
 }
 
-.about {
+.about, .donate {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 3rem;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
   line-height: 2rem;
   place-items: center;
-  text-align: justify;
-  margin-top: 5rem;
+  justify-content: space-between;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
 
+  .about-img {
+      grid-column: span 4;
+  }
+
+  .about-text {
+      grid-column: 6 / span 5;
+      text-align: justify;
+  }
+
+  .donate-img {
+      grid-column: span 4;
+      order: 1;
+  }
+
+  .donate-text {
+      grid-column: 2 / span 4;
+      margin-right: 2rem;
+      text-align: justify;
+  }
 
   span {
+      text-align: left;
     font-weight: 700;
     position: relative;
     z-index: 1;
@@ -36,16 +57,56 @@
     transition-delay: 0.4s;
   }
   img {
-      width: 100%;
+    width: 100%;
   }
 
-   @media screen and (max-width: 768px) {
-
-   .about-img, .about-text {
-       grid-column: span 3;
-       margin-inline: 0.5rem;
-       padding: 0.5rem
-   }
+  @media screen and (max-width: 850px) {
+    .about-text {
+      grid-column: span 6;
+    }
   }
 
+  @media screen and (max-width: 768px) {
+    margin-top: 5rem;
+
+    span::after {
+      top: 2.5rem;
+    }
+    .about-img,
+    .donate-img,
+    .about-text,
+    .donate-text {
+       grid-column: 2 / span 8;
+    }
+    .donate-img {
+        order: 0;
+    }
+  }
+}
+
+.donate {
+    margin-top: 2rem;
+}
+
+.card {
+  border: none;
+}
+
+figure {
+  position: relative;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+  width: 100%;
+
+  h4 {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 3rem 1rem 0.5rem 1rem;
+    text-transform: uppercase;
+  }
 }

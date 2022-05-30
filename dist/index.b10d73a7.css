@@ -1,6 +1,6 @@
 :root {
   --bs-body-font-family: "Roboto", sans-serif;
-  --lg-spacing: 8rem;
+  --lg-spacing: 5rem;
 }
 
 .py-lg {
@@ -48,13 +48,13 @@
   font-weight: 700;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 845px) {
   .home-hdr {
     height: 90vh;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 650px) {
   .home-hdr {
     height: 100vh;
   }
@@ -116,24 +116,46 @@
   }
 }
 
-.about {
-  text-align: justify;
-  grid-template-columns: 1fr 2fr;
+.about, .donate {
+  grid-template-columns: repeat(10, 1fr);
+  justify-content: space-between;
   place-items: center;
-  gap: 3rem;
-  margin-top: 5rem;
+  gap: 1rem;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
   line-height: 2rem;
   display: grid;
 }
 
-.about span {
+.about .about-img, .donate .about-img {
+  grid-column: span 4;
+}
+
+.about .about-text, .donate .about-text {
+  text-align: justify;
+  grid-column: 6 / span 5;
+}
+
+.about .donate-img, .donate .donate-img {
+  order: 1;
+  grid-column: span 4;
+}
+
+.about .donate-text, .donate .donate-text {
+  text-align: justify;
+  grid-column: 2 / span 4;
+  margin-right: 2rem;
+}
+
+.about span, .donate span {
+  text-align: left;
   z-index: 1;
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
 }
 
-.about span:after {
+.about span:after, .donate span:after {
   content: "";
   z-index: -1;
   width: 100%;
@@ -145,16 +167,59 @@
   left: 0;
 }
 
-.about img {
+.about img, .donate img {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .about .about-img, .about .about-text {
-    grid-column: span 3;
-    margin-inline: .5rem;
-    padding: .5rem;
+@media screen and (max-width: 850px) {
+  .about .about-text, .donate .about-text {
+    grid-column: span 6;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .about, .donate {
+    margin-top: 5rem;
+  }
+
+  .about span:after, .donate span:after {
+    top: 2.5rem;
+  }
+
+  .about .about-img, .about .donate-img, .about .about-text, .about .donate-text, .donate .about-img, .donate .donate-img, .donate .about-text, .donate .donate-text {
+    grid-column: 2 / span 8;
+  }
+
+  .about .donate-img, .donate .donate-img {
+    order: 0;
+  }
+}
+
+.donate {
+  margin-top: 2rem;
+}
+
+.card {
+  border: none;
+}
+
+figure {
+  position: relative;
+}
+
+figcaption {
+  width: 100%;
+  background: linear-gradient(#0000 0%, #000 100%);
+  position: absolute;
+  bottom: 0;
+}
+
+figcaption h4, figcaption .h4 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 3rem 1rem .5rem;
+  font-weight: 700;
 }
 
 :root {
@@ -746,13 +811,13 @@ progress {
   margin-right: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 600px) {
   .container-sm, .container {
     max-width: 540px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 845px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
   }
@@ -991,7 +1056,7 @@ progress {
   --bs-gutter-y: 3rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 600px) {
   .col-sm {
     flex: 1 0;
   }
@@ -1193,7 +1258,7 @@ progress {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 845px) {
   .col-md {
     flex: 1 0;
   }
@@ -2176,14 +2241,14 @@ progress {
   overflow-x: auto;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 599.98px) {
   .table-responsive-sm {
     -webkit-overflow-scrolling: touch;
     overflow-x: auto;
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 844.98px) {
   .table-responsive-md {
     -webkit-overflow-scrolling: touch;
     overflow-x: auto;
@@ -3699,7 +3764,7 @@ textarea.form-control-lg {
   right: 0;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 600px) {
   .dropdown-menu-sm-start {
     --bs-position: start;
   }
@@ -3719,7 +3784,7 @@ textarea.form-control-lg {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 845px) {
   .dropdown-menu-md-start {
     --bs-position: start;
   }
@@ -4254,7 +4319,7 @@ textarea.form-control-lg {
   overflow-y: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 600px) {
   .navbar-expand-sm {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -4313,7 +4378,7 @@ textarea.form-control-lg {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 845px) {
   .navbar-expand-md {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -4798,7 +4863,7 @@ textarea.form-control-lg {
   margin-bottom: .75rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 600px) {
   .card-group {
     flex-flow: wrap;
     display: flex;
@@ -5373,7 +5438,7 @@ textarea.form-control-lg {
   margin-left: -1px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 600px) {
   .list-group-horizontal-sm {
     flex-direction: row;
   }
@@ -5403,7 +5468,7 @@ textarea.form-control-lg {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 845px) {
   .list-group-horizontal-md {
     flex-direction: row;
   }
@@ -5881,7 +5946,7 @@ textarea.form-control-lg {
   margin: .25rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 600px) {
   .modal-dialog {
     max-width: 500px;
     margin: 1.75rem auto;
@@ -5937,7 +6002,7 @@ textarea.form-control-lg {
   border-radius: 0;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 599.98px) {
   .modal-fullscreen-sm-down {
     width: 100vw;
     max-width: none;
@@ -5964,7 +6029,7 @@ textarea.form-control-lg {
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 844.98px) {
   .modal-fullscreen-md-down {
     width: 100vw;
     max-width: none;
@@ -6854,7 +6919,7 @@ textarea.form-control-lg {
   top: 0;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 600px) {
   .sticky-sm-top {
     z-index: 1020;
     position: sticky;
@@ -6862,7 +6927,7 @@ textarea.form-control-lg {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 845px) {
   .sticky-md-top {
     z-index: 1020;
     position: sticky;
@@ -8268,7 +8333,7 @@ textarea.form-control-lg {
   visibility: hidden !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 600px) {
   .float-sm-start {
     float: left !important;
   }
@@ -8920,7 +8985,7 @@ textarea.form-control-lg {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 845px) {
   .float-md-start {
     float: left !important;
   }
