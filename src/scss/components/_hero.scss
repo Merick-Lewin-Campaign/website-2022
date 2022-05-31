@@ -9,7 +9,7 @@
     }
 }
 
-// header with background image 
+// Home page Hero Section
 .home-hdr {
     background-image: url("../img/hdr-bg.jpg");
     background-repeat: no-repeat;
@@ -34,14 +34,19 @@
         text-shadow: -5px 6px 5px rgba(0,0,0,0.2);
     }
 
+    // medium breakpoint
     @media screen and (max-width: 845px){
         height: 90vh;
 
     }
+
+    // mobile breakpoint
     @media screen and (max-width: 650px){
         height: 100vh;
 
     }
+
+    // height breakpoint
     @media screen and (max-height: 728px) {
         height: 100vh;
         img {
@@ -56,6 +61,7 @@
     padding-bottom: 3.5em;
 }
 
+// medium breakpoint
 @media screen and (max-width: 768px) {
 .home-hdr {
         text-align: center;
@@ -73,6 +79,7 @@
         
     }
 
+// large breakpoint
 @media screen and (max-width: 991px) {
         
     .nav-bg {
@@ -83,6 +90,7 @@
     }
 }
 
+// nav background color after scrolling ~> see index.js
 .scrolled {
     background-color: $secondary;
 }

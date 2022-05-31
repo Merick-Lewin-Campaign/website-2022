@@ -4,7 +4,9 @@
   "description": "Merick Lewin for Broward County School Board District 6",
   "source": [
     "./src/index.html",
-    "./src/why-im-running/index.html"
+    "./src/why-im-running/index.html",
+    "./src/donate/index.html",
+    "./src/get-involved/index.html"
   ],
   "scripts": {
     "dev": "parcel",
