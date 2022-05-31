@@ -513,7 +513,9 @@ window.onscroll = function() {
 };
 // homepage scrollspy navigation active links
 var scrollSpy = document.querySelector('[data-bs-spy="scroll"]');
-window.addEventListener("activate.bs.scrollspy", function() {});
+window.addEventListener("activate.bs.scrollspy", function() {
+    console.log("scroll action");
+});
 
 },{"bootstrap":"h36JB"}],"h36JB":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
