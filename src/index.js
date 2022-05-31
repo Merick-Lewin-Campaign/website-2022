@@ -15,4 +15,5 @@ window.onscroll = function () {
 // homepage scrollspy navigation active links
 var scrollSpy = document.querySelector('[data-bs-spy="scroll"]')
 window.addEventListener('activate.bs.scrollspy', function () {
+    console.log("scroll action")
 })
