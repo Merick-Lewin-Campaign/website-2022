@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/Merick-Lewin-Campaign/school-board-2022/issues"
   },
-  "homepage": "https://github.com/Merick-Lewin-Campaign/school-board-2022#readme",
+  "homepage": "https://merick-lewin-campaign.github.io/website-2022",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
     "parcel": "^2.6.0"
