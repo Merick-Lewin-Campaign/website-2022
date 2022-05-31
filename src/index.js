@@ -12,4 +12,7 @@ window.onscroll = function () {
     }
 }
 
-// underline animation when scroll reach the section
+// homepage scrollspy navigation active links
+var scrollSpy = document.querySelector('[data-bs-spy="scroll"]')
+window.addEventListener('activate.bs.scrollspy', function () {
+})

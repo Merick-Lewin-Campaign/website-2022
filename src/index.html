@@ -14,9 +14,9 @@
     <title>Merick Lewin for School Board</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#home-navbar" data-bs-offset="0">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark p-3 nav-bg">
+    <nav id="home-navbar" class="navbar navbar-expand-lg sticky-top navbar-dark p-3 nav-bg">
         <div class="container-lg d-flex justify-content-lg-between">
             <a class="navbar-brand" href="#">
                 <img src="./img/campaign-logo.svg" alt="Merick Lewin for School Board District 6 Logo" width="300">
@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-lg-center align-items-end">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -37,13 +37,13 @@
                         <a class="nav-link" href="#focus">Focus</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./why-im-running">Why I'm Running</a>
+                        <a class="nav-link" href="/why-im-running">Why I'm Running</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./get-involved">Get Involved</a>
+                        <a class="nav-link" href="/get-involved">Get Involved</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-danger fw-bold ms-5 px-4 py-3" href="./donate/">Donate</a>
+                        <a class="btn btn-danger fw-bold ms-5 px-4 py-3" href="/donate/">Donate</a>
                     </li>
                 </ul>
             </div>
@@ -51,17 +51,18 @@
         </nav>
         <!-- /Navbar -->
     <!-- Hero -->
-    <header class="hdr-container">
-        <div class="hero home-hdr">
-            <div class="container-lg d-flex justify-content-md-between align-items-end  justify-content-sm-center">
-                <div class="row justify-content-sm-center align-items-md-center align-items-lg-end ">
-                    <div class="col-sm-12 col-md-6 col-xl-7 hero-text ">
-                        <h1 class="display-3 fw-bold">Merick Lewin</h1>
-                        <h2 class="display-4 fw-bold">for School Board</h2>
-                        <p class="lead">Merick Lewin is running for Broward County School Board District 6 to work every
-                            day to
-                            improve our
-                            schools.</p>
+</div>
+<header id="home" class="hdr-container">
+    <div class="hero home-hdr">
+        <div class="container-lg d-flex justify-content-md-between align-items-end  justify-content-sm-center">
+            <div class="row justify-content-sm-center align-items-md-center align-items-lg-end ">
+                <div class="col-sm-12 col-md-6 col-xl-7 hero-text ">
+                    <h1 class="display-3 fw-bold">Merick Lewin</h1>
+                    <h2 class="display-4 fw-bold">for School Board</h2>
+                    <p class="lead">Merick Lewin is running for Broward County School Board District 6 to work every
+                        day to
+                        improve our
+                        schools.</p>
                     </div>
                     <div class="col-sm-8 col-md-6 col-xl-5">
                         <img src="./img/hdr-photo.png" class="img-fluid" alt="Merick Lewin Family Photo">
@@ -69,10 +70,10 @@
                 </div>
             </div>
         </div>
-
+        
     </header>
     <!-- /Hero -->
-
+    
     <!-- Form Component -->
     <div class="container-lg home-signup-form">
         <div class="row justify-content-center signup">
@@ -106,6 +107,7 @@
 
     <!-- About -->
     <section class="container-lg">
+        <span id="about" name="about"></span>
         <div class="about mx-xl-5 mx-lg-3 mx-md-1">
             <div class="about-img">
                 <img src="./img/MerickLewin.jpg" alt="Merick Lewin Photo" class="img-fluid">
@@ -136,6 +138,7 @@
     </section>
     <!-- /About -->
     <!-- Focus -->
+    <span id="focus" name="focus"></span>
     <section class="bg-secondary my-5">
         <div class="container-lg">
             <div class="row justify-content-center">
@@ -143,7 +146,7 @@
                     <h1 class="text-white h3 text-center text-uppercase py-2 fw-bolder">Campaign Focus</h1>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-3 g-4 px-md-2 px-lg-5 pb-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4 px-sm-5 pb-5">
                 <div class="col">
                     <div class="card h-100">
                         <figure>
@@ -153,20 +156,11 @@
                             </figcaption>
                         </figure>
                         <div class="card-body">
-                            <p class="card-text pb-4">Clear and consistent communication between me and the families,
-                                students,
-                                teachers, staff, and all stakeholders in the
-                                district. My door will always be open, my phone will always be on. I will be as vigilant
-                                about
-                                your child's education as
-                                you are. When the School Board has successes, you will know. When we fall short, you
-                                will
-                                know.
-                                When we face challenges,
-                                you will know. When we need help, you will know. When I am your School Board member,
-                                KNOW
-                                you
-                                will always be informed.</p>
+                            <p class="card-text pb-4">Clear and consistent communication between me and the families, students, teachers, staff, and
+                                all stakeholders in the district. My door will always be open, my phone will always be on. I will be as vigilant
+                                about your child's education as you are. When the School Board has successes, you will know. When we fall short, you
+                                will know. When we face challenges, you will know. When we need help, you will know. When I am your School Board
+                                member, KNOW you will always be informed.</p>
                         </div>
                     </div>
                 </div>
@@ -179,21 +173,11 @@
                             </figcaption>
                         </figure>
                         <div class="card-body">
-                            <p class="card-text pb-4 ">I will make sure all students in our schools are given the
-                                opportunity to
-                                reach
-                                their highest potential. This will be
-                                achieved through increasing access to mental health resources as well as the promotion
-                                of
-                                all
-                                the clubs, teams,
-                                programs, and extracurricular activities that give children a sense of belonging and a
-                                chance at
-                                excellence. Schools
-                                must be places that foster the unique skills, talents, and interests of our students,
-                                letting
-                                each one discover what
-                                makes them special.</p>
+                            <p class="card-text pb-4 ">I will make sure all students in our schools are given the opportunity to reach their highest
+                                potential. This will be achieved through increasing access to mental health resources as well as the promotion of
+                                all the clubs, teams, programs, and extracurricular activities that give children a sense of belonging and a chance
+                                at excellence. Schools must be places that foster the unique skills, talents, and interests of our students, letting
+                                each one discover what makes them special.</p>
                         </div>
                     </div>
                 </div>
@@ -206,19 +190,11 @@
                             </figcaption>
                         </figure>
                         <div class="card-body">
-                            <p class="card-text pb-4">All students should have access to the post-secondary outcome that
-                                fits
-                                them
-                                best and gives them the greatest chance at success and fulfillment. Students who want to
-                                go
-                                to
-                                college should graduate from our schools with the skills and tools that allow them to
-                                succeed.
-                                Students who want to explore trade, technical, military, and workforce post-secondary
-                                options
-                                should be given the same level of information, resources, and support as our college
-                                bound
-                                students. ALL CHILDREN DESERVE to follow their dreams.</p>
+                            <p class="card-text pb-4">All students should have access to the post-secondary outcome that fits them best and gives
+                                them the greatest chance at success and fulfillment. Students who want to go to college should graduate from our
+                                schools with the skills and tools that allow them to succeed. Students who want to explore trade, technical,
+                                military, and workforce post-secondary options should be given the same level of information, resources, and support
+                                as our college bound students. ALL CHILDREN DESERVE to follow their dreams.</p>
                         </div>
                     </div>
                 </div>
@@ -229,13 +205,11 @@
     <!-- Donate -->
     <section class="container-lg">
         <div class="donate">
-            <div class="donate-text">
+            <div class="donate-text mt-5">
                 <h1 class="mb-5 h2 fw-bold"><span>Support the Campaign</span></h1>
-                <p>Every donation makes a huge difference to Merick’s campaign. Donation dollars are being used for
-                    signage,
-                    print
+                <p>Every donation makes a huge difference to Merick’s campaign. Donation dollars are being used for signage, print
                     material, and other marketing to help get the word out about her campaign locally.</p>
-                <a href="/donate" class="btn btn-danger px-4 py-3">Donate Now &nbsp;&nbsp;&nbsp;<svg width="8" height="13"
+                <a href="/donate" class="btn btn-danger mb-5 px-4 py-3">Donate Now &nbsp;&nbsp;&nbsp;<svg width="8" height="13"
                         viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 11.09L4.58 6.5L0 1.91L1.41 0.5L7.41 6.5L1.41 12.5L0 11.09Z" fill="white" />
                     </svg></a>
@@ -267,7 +241,7 @@
     <footer class="bg-secondary">
         <div class="container-lg">
             <div class="row justify-content-center text-center">
-                <div class="col-7">
+                <div class="col-md-9 col-lg-7">
                     <a href="/">
                         <img src="./img/campaign-logo.svg" alt="Merick Lewin for School Board District 6 Logo" width="300"
                             class="py-5 me-3">
@@ -277,10 +251,21 @@
                         School Board, District 6.
                     </p>
                     <div class="py-3">
-                        <a href="mailto:merick@mericklewin.com"><img src="./img/icon-email.svg" alt="email icon"></a> &nbsp;
+                        <a href="mailto:merick@mericklewin.com"><svg width="31" height="35" viewBox="0 0 31 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M26.5714 2.1875H4.42857C1.98109 2.1875 0 4.14463 0 6.5625V28.4375C0 30.8561 1.9804 32.8125 4.42857 32.8125H26.5714C29.0196 32.8125 31 30.8561 31 28.4375V6.5625C31 4.14463 29.021 2.1875 26.5714 2.1875ZM26.5714 22.9688C26.5714 24.1767 25.5798 25.1562 24.3571 25.1562H6.64286C5.42016 25.1562 4.42857 24.1767 4.42857 22.9688V15.4424L14.0123 20.1776C14.4828 20.4053 14.9879 20.5215 15.5 20.5215C16.0121 20.5215 16.5206 20.4061 16.9856 20.1765L26.5714 15.4424V22.9688ZM26.5714 12.9951L15.9982 18.2191C15.6868 18.3729 15.3193 18.3729 15.008 18.2191L4.42857 12.9951V12.0312C4.42857 10.8233 5.42016 9.84375 6.64286 9.84375H24.3571C25.5798 9.84375 26.5714 10.8233 26.5714 12.0312V12.9951Z"
+                                    fill="white" fill-opacity="0.81" />
+                            </svg></a> &nbsp;
                         &nbsp;
-                        <a href="https://www.facebook.com/MerickLewinForSchoolBoard6"><img src="./img/icon-facebook.svg"
-                                alt="facebook icon"></a>
+                        <a href="https://www.facebook.com/MerickLewinForSchoolBoard6"><svg width="31" height="35" viewBox="0 0 31 35"
+                                fill="none">
+                                <g clip-path="url(#clip0_10_65)">
+                                    <path
+                                        d="M27.6786 2.1875H3.32143C2.44053 2.1875 1.59571 2.5332 0.972824 3.14856C0.349935 3.76391 0 4.59851 0 5.46875L0 29.5312C0 30.4015 0.349935 31.2361 0.972824 31.8514C1.59571 32.4668 2.44053 32.8125 3.32143 32.8125H12.8186V22.4007H8.45926V17.5H12.8186V13.7648C12.8186 9.51631 15.3789 7.16953 19.3003 7.16953C21.1783 7.16953 23.1421 7.50039 23.1421 7.50039V11.6703H20.9783C18.8463 11.6703 18.1814 12.9773 18.1814 14.3179V17.5H22.9407L22.1795 22.4007H18.1814V32.8125H27.6786C28.5595 32.8125 29.4043 32.4668 30.0272 31.8514C30.6501 31.2361 31 30.4015 31 29.5312V5.46875C31 4.59851 30.6501 3.76391 30.0272 3.14856C29.4043 2.5332 28.5595 2.1875 27.6786 2.1875Z"
+                                        fill="white" fill-opacity="0.81" />
+                                </g>
+                            </svg></a>
     
                     </div>
     

@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+// Hero Section Form styles for Postion
 .home-signup-form {
   position: relative;
   margin-top: -100px;
@@ -7,7 +11,21 @@
   }
 }
 
-.about, .donate {
+[id]:target::before,
+[name]:target::before
+{
+    display: block;
+    height: 50px;
+    margin-top: -50px;
+
+    content: '';
+}
+
+// Grid styles for
+// - Home page About Section, Support Section
+// - Why Running Page Content
+
+.about, .donate, .why-running {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   gap: 1rem;
@@ -37,6 +55,16 @@
       grid-column: 2 / span 4;
       margin-right: 2rem;
   }
+
+  .why-running-text {
+      grid-column: 2 / span 5;
+      margin-right: 2rem;
+  }
+  .why-running-img {
+      grid-column: 7 / span 3;
+  }
+
+  // underline effect
 span {
   text-decoration: none;
   background-image: linear-gradient($primary, $primary);
@@ -52,28 +80,48 @@ span:hover {
   background-size: 10% 10px;
   color: inherit;
 }
+
   img {
     width: 100%;
   }
 
+  // large breakpoint
    @media screen and (max-width: 1200px) {
     .donate-text {
       grid-column: span 6;
     }
+
+    .why-running-text {
+      grid-column: span 5;
+      margin-right:0
+  }
+    .why-running-img {
+      grid-column: 7 / span 4;
   }
 
+  }
+
+  // medium breakpoint
   @media screen and (max-width: 850px) {
     .about-text {
       grid-column: span 6;
     }
+
+    .why-running-text {
+      grid-column: 2 / span 8;
+  }
+    .why-running-img {
+        grid-column: 2 / span 8;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+  }
   }
 
+  // tablet breakpoint
   @media screen and (max-width: 768px) {
     margin-top: 5rem;
 
-    span::after {
-      top: 2.5rem;
-    }
     .about-img,
     .donate-img,
     .about-text,
@@ -84,15 +132,41 @@ span:hover {
         order: 0;
     }
   }
+
+  // mobile breakpoint
+    @media screen and (max-width: 550px) {
+
+    .about-img,
+    .donate-img,
+    .about-text,
+    .donate-text {
+       grid-column: span 10;
+       padding: 0 0.5rem
+    }
+    .donate-img {
+        order: 0;
+    }
+    .why-running-img {
+        grid-template-columns: 1fr;
+    }
+  }
 }
 
+// special margin
 .donate {
     margin-top: 2rem;
 }
 
+.why-running {
+    margin-top: 3rem;
+}
+
+// remove Boostrap card border
 .card {
   border: none;
 }
+
+// card title
 
 figure {
   position: relative;
@@ -113,6 +187,22 @@ figcaption {
   }
 }
 
+// Stars Header background
+.star-header {
+    background-image: url("../img/star-pattern.svg");
+    text-shadow:  0 .5rem 0.75rem rgba($secondary, .15);;
+}
+
+// Support Component Background
+.support {
+    background-image: url("../img/support-bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+// Footer for all pages
 footer {
     padding-top: 5rem;
     

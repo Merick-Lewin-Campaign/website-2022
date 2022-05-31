@@ -510,8 +510,10 @@ window.onscroll = function() {
     // pageYOffset or scrollY
     if (window.pageYOffset > 50) navbar.classList.add("scrolled");
     else navbar.classList.remove("scrolled");
-} // underline animation when scroll reach the section
-;
+};
+// homepage scrollspy navigation active links
+var scrollSpy = document.querySelector('[data-bs-spy="scroll"]');
+window.addEventListener("activate.bs.scrollspy", function() {});
 
 },{"bootstrap":"h36JB"}],"h36JB":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
