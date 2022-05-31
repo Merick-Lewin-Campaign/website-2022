@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build --public-url='/nns'",
+    "build": "parcel build --public-url='./'",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
