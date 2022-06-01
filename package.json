@@ -5,7 +5,7 @@
   "source": [
     "./src/index.html",
     "./src/why-im-running.html",
-    "./src/donate.html",
+    "./src/thank-you.html",
     "./src/get-involved.html"
   ],
   "scripts": {

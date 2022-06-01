@@ -13,10 +13,17 @@
     <meta property="og:title" content="Merick Lewin for School Board District 6" />
     <meta property="og:description"
         content="Merick Lewin is running for Broward County School Board District 6 to work every day to improve our schools." />
-    <meta property="og:image" content="./img/main-site-img.jpg" />
+    <meta property="og:image" content="https://merick-lewin-campaign.github.io/website-2022/main-site-img.jpg" />
     <meta property="og:url" content="https://mericklewin.com" />
     <meta property="og:type" content="website" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <!-- Twitter Meta -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Merick Lewin for School Board District 6" />
+    <meta name="twitter:description"
+        content="Merick Lewin is running for Broward County School Board District 6 to work every day to improve our schools." />
+    <meta name="twitter:image:src" content="https://merick-lewin-campaign.github.io/website-2022/main-site-img.jpg" />
+    <!-- /Twitter Meta -->
     <!-- /SEO Meta Tags -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +39,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-secondary p-3">
         <div class="container-lg d-flex justify-content-lg-between">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="./">
                 <img src="./img/campaign-logo.svg" alt="" width="270" height="51">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -40,24 +47,26 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-lg-center align-items-sm-end">
+                <ul class="navbar-nav align-items-lg-center align-items-end">
                     <li class="nav-item">
-                        <a class="nav-link" href="./">Home</a>
+                        <a class="nav-link" href="./" aria-label="home page">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./#about">About</a>
+                        <a class="nav-link" href="./#about" aria-label="about Merick homepage bookmark">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./#focus">Focus</a>
+                        <a class="nav-link" href="./#focus" aria-label="campaign focus homepage bookmark">Focus</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./why-im-running.html">Why I'm Running</a>
+                        <a class="nav-link active" aria-current="page" href="./why-im-running.html" aria-label="why I'm running page">Why I'm
+                            Running</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./get-involved.html">Get Involved</a>
+                        <a class="nav-link" href="./get-involved.html" aria-label="get involved page">Get Involved</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-danger fw-bold ms-5 px-4 py-3" href="./donate.html">Donate</a>
+                        <a class="btn btn-danger fw-bold ms-5 px-4 py-3" href="https://secure.actblue.com/donate/mericklewin6"
+                            aria-label="donate page">Donate</a>
                     </li>
                 </ul>
             </div>
@@ -70,7 +79,7 @@
         <div class="container-lg">
             <div class="row justify-content-center text-center">
                 <div class="col-md-6">
-                    <h1 class="m-5 text-white py-5 text-uppercase fw-bolder">
+                    <h1 class="m-5 text-white py-5 text-uppercase fw-bolder" id="why-running">
                         <span>Why I'm Running</span>
                     </h1>
                 </div>
@@ -80,7 +89,7 @@
     <!-- /Header -->
 
     <!-- Main Content -->
-    <section class="container-lg">
+    <article class="container-lg" role="contentinfo" aria-labelledby="why-running">
         <div class="why-running mx-xl-5 mx-lg-3 mx-md-1">
             <div class="why-running-text">
                 <p>Education is in my blood, my grandfather was a teacher in Brooklyn before he moved to South Florida
@@ -116,14 +125,14 @@
             </div>
             <!-- /Photos -->
         </div>
-    </section>
+    </article>
     <!-- /Main Content -->
 
     <!-- Signup Form -->
-    <div class="container-lg bg-secondary">
+    <section class="container-lg bg-secondary" role="contentinfo" aria-labelledby="signup-form">
         <div class="row justify-content-center">
             <div class=" col-md-8 p-3">
-                <h3 class="text-white text-center text-uppercase mt-2 py-4">Sign up for campaign updates!</h3>
+                <h3 class="text-white text-center text-uppercase mt-2 py-4" id="signup-form">Sign up for campaign updates!</h3>
                 <div class="row p-2">
                     <div class="col">
                         <div class="form-floating mb-3">
@@ -146,21 +155,22 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- /Signup Form -->
 
     <!-- Support Section-->
-    <section class="container-lg support">
+    <section class="container-lg support" role="contentinfo" aria-labelledby="support">
         <div class="row py-lg justify-content-center">
             <div class="col-sm-11 col-md-10 col-lg-8 text-center ">
-                <h1 class="h2 text-uppercase fw-bold mb-3">Support the Campaign</h1>
+                <h1 class="h2 text-uppercase fw-bold mb-3" id="support">Support the Campaign</h1>
                 <p class="text-danger fs-5 mb-5">★<span class="fs-3">★</span>★</p>
                 <p class="lh-lg lead">Every donation makes a huge difference to Merick’s campaign. Donation dollars are
                     being
                     used for
                     signage, print material, and other marketing to help get the word out about her campaign locally.
                 </p>
-                <a href="./donate.html" class="btn btn-danger mt-5 px-5 py-3">Donate Now &nbsp;&nbsp;&nbsp;<svg
+                <a href="https://secure.actblue.com/donate/mericklewin6" target="_blank" class="btn btn-danger mt-5 px-5 py-3">Donate
+                    Now &nbsp;&nbsp;&nbsp;<svg
                         width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 11.09L4.58 6.5L0 1.91L1.41 0.5L7.41 6.5L1.41 12.5L0 11.09Z" fill="white" />
                     </svg></a>
