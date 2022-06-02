@@ -34,9 +34,7 @@ body {
   justify-content: space-between;
   margin-top: 10rem;
   margin-bottom: 4rem;
-  p {
-      text-align: justify;
-  }
+
 
   .about-img {
       grid-column: span 4;
@@ -163,7 +161,7 @@ span:hover {
 
 // remove Boostrap card border
 .card {
-  border: none;
+  border: none !important;
 }
 
 // card title
@@ -175,7 +173,7 @@ figure {
 figcaption {
   position: absolute;
   bottom: 0;
-  background: linear-gradient(to bottom, transparent 0%, black 100%);
+  background: linear-gradient(to bottom, transparent -10%, $primary 100%);
   width: 100%;
 
   h4 {
@@ -184,6 +182,7 @@ figcaption {
     text-align: center;
     padding: 3rem 1rem 0.5rem 1rem;
     text-transform: uppercase;
+    text-shadow: -5px 6px 5px rgba(0,0,0,0.2);
   }
 }
 
