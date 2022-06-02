@@ -150,10 +150,6 @@ body {
   display: grid;
 }
 
-.about p, .donate p, .why-running p {
-  text-align: justify;
-}
-
 .about .about-img, .donate .about-img, .why-running .about-img {
   grid-column: span 4;
 }
@@ -271,7 +267,7 @@ body {
 }
 
 .card {
-  border: none;
+  border: none !important;
 }
 
 figure {
@@ -280,7 +276,7 @@ figure {
 
 figcaption {
   width: 100%;
-  background: linear-gradient(#0000 0%, #000 100%);
+  background: linear-gradient(#0000 -10%, #1697b1 100%);
   position: absolute;
   bottom: 0;
 }
@@ -289,6 +285,7 @@ figcaption h4, figcaption .h4 {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: -5px 6px 5px #0003;
   padding: 3rem 1rem .5rem;
   font-weight: 700;
 }
