@@ -504,6 +504,7 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"8lqZg":[function(require,module,exports) {
 var _bootstrap = require("bootstrap");
+window.bootstrap = require("bootstrap");
 //homepage nav background color when begin to scroll down
 const navbar = document.querySelector("nav");
 window.onscroll = function() {
@@ -512,9 +513,20 @@ window.onscroll = function() {
     else navbar.classList.remove("scrolled");
 };
 // homepage scrollspy navigation active links
-var scrollSpy = document.querySelector('[data-bs-spy="scroll"]');
-window.addEventListener("activate.bs.scrollspy", function() {
-    console.log("scroll action");
+document.addEventListener("DOMContentLoaded", function() {
+    var myScrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: "#home-navbar"
+    });
+});
+const navLinks = document.querySelectorAll(".nav-item");
+const menuToggle = document.getElementById("navbarNav");
+const bsCollapse = new bootstrap.Collapse(menuToggle, {
+    toggle: false
+});
+navLinks.forEach((l)=>{
+    l.addEventListener("click", ()=>{
+        bsCollapse.toggle();
+    });
 });
 
 },{"bootstrap":"h36JB"}],"h36JB":[function(require,module,exports) {

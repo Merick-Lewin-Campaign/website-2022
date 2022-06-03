@@ -1,6 +1,6 @@
 :root {
-  --bs-body-font-family: "Roboto", sans-serif;
   --lg-spacing: 5rem;
+  --bs-body-font-family: "Roboto", sans-serif !important;
 }
 
 .py-lg {
@@ -118,6 +118,7 @@
 }
 
 body {
+  font-family: Roboto, serif;
   position: relative;
 }
 
@@ -290,6 +291,13 @@ figcaption h4, figcaption .h4 {
   font-weight: 700;
 }
 
+.card-text {
+  padding: .5rem;
+  font-size: .925rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
 .star-header {
   text-shadow: 0 .5rem .75rem #0e1b5826;
   background-image: url("star-pattern.74052679.svg");
@@ -359,7 +367,7 @@ footer .copy {
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, #ffffff26, #fff0);
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family: Roboto, serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -6230,7 +6238,6 @@ textarea.form-control-lg {
 
 .tooltip {
   z-index: 1080;
-  font-family: var(--bs-font-sans-serif);
   text-align: left;
   text-align: start;
   text-shadow: none;
@@ -6243,6 +6250,7 @@ textarea.form-control-lg {
   word-wrap: break-word;
   opacity: 0;
   margin: 0;
+  font-family: Roboto, serif;
   font-size: .875rem;
   font-style: normal;
   font-weight: 400;
@@ -6342,7 +6350,6 @@ textarea.form-control-lg {
 .popover {
   z-index: 1070;
   max-width: 276px;
-  font-family: var(--bs-font-sans-serif);
   text-align: left;
   text-align: start;
   text-shadow: none;
@@ -6357,6 +6364,7 @@ textarea.form-control-lg {
   background-clip: padding-box;
   border: 1px solid #0003;
   border-radius: .5rem;
+  font-family: Roboto, serif;
   font-size: .875rem;
   font-style: normal;
   font-weight: 400;
