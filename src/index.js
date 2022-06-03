@@ -1,8 +1,8 @@
 import 'bootstrap';
+window.bootstrap = require('bootstrap');
 
 //homepage nav background color when begin to scroll down
 const navbar = document.querySelector('nav')
-
 window.onscroll = function () {
     // pageYOffset or scrollY
     if (window.pageYOffset > 50) {
@@ -13,7 +13,17 @@ window.onscroll = function () {
 }
 
 // homepage scrollspy navigation active links
-var scrollSpy = document.querySelector('[data-bs-spy="scroll"]')
-window.addEventListener('activate.bs.scrollspy', function () {
-    console.log("scroll action")
+document.addEventListener("DOMContentLoaded", function () {
+    var myScrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: "#home-navbar"
+    })
+});
+
+const navLinks = document.querySelectorAll('.nav-item')
+const menuToggle = document.getElementById('navbarNav')
+const bsCollapse = new bootstrap.Collapse(menuToggle, {
+    toggle: false
+})
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { bsCollapse.toggle() })
 })
