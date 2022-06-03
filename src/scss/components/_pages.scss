@@ -186,6 +186,15 @@ figcaption {
   }
 }
 
+//card text
+.card-text {
+  font-weight: 400;
+  font-size: 0.925rem;
+  line-height: 1.7rem;
+  padding: 0.5rem;
+
+}
+
 // Stars Header background
 .star-header {
     background-image: url("../img/star-pattern.svg");

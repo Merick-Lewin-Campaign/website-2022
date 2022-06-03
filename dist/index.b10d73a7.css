@@ -1,6 +1,6 @@
 :root {
-  --bs-body-font-family: "Roboto", sans-serif;
   --lg-spacing: 5rem;
+  --bs-body-font-family: "Roboto", sans-serif !important;
 }
 
 .py-lg {
@@ -288,6 +288,13 @@ figcaption h4, figcaption .h4 {
   text-shadow: -5px 6px 5px #0003;
   padding: 3rem 1rem .5rem;
   font-weight: 700;
+}
+
+.card-text {
+  padding: .5rem;
+  font-size: .925rem;
+  font-weight: 400;
+  line-height: 1.7rem;
 }
 
 .star-header {
